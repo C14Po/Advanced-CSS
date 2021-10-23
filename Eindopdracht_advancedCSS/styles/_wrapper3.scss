@@ -1,0 +1,88 @@
+.wrapper-three {
+	height: 250px;
+	width: auto;
+	position: absolute;
+	right: 0;
+
+	.social-media {
+		width: 300px;
+		height: 100%;
+		list-style: none;
+		position: relative;
+		overflow: hidden;
+
+		li {
+			height: 50px;
+			width: 100%;
+
+			.fa-laptop-code,
+			.fa-twitter,
+			.fa-linkedin-in,
+			.fa-facebook-f,
+			.fa-github {
+				color: $white;
+				width: 50px;
+			}
+
+			.fa-laptop-code {
+				padding: 16px 60px 10px 19px;
+			}
+
+			.fa-twitter {
+				padding: 18px 60px 10px 22px;
+			}
+
+			.fa-linkedin-in {
+				padding: 19px 60px 10px 23px;
+			}
+
+			.fa-facebook-f {
+				padding: 19px 60px 10px 25px;
+			}
+
+			.fa-github {
+				padding: 19px 60px 10px 21px;
+			}
+
+			a {
+				text-decoration: none;
+				color: $white;
+				font-weight: bold;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.blog {
+			background-color: #e17b77;
+			top: 0;
+			@include transformSocialMedia();
+		}
+
+		.twitter {
+			background-color: #00aced;
+			bottom: 150px;
+			@include transformSocialMedia();
+		}
+
+		.linkedin {
+			background-color: #007bb6;
+			bottom: 100px;
+			@include transformSocialMedia();
+		}
+
+		.facebook {
+			background-color: #3b5998;
+			bottom: 50px;
+			@include transformSocialMedia();
+		}
+
+		.github {
+			background-color: #333;
+			bottom: 0;
+			@include transformSocialMedia();
+		}
+	}
+}

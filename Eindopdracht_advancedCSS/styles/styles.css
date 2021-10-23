@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #c3cfe2;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper-one {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.wrapper-one .testimonial-card {
+  background-color: #fff;
+  border-radius: 15px;
+  height: 100%;
+  margin: 20px 5px;
+  position: relative;
+  -webkit-box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-one .testimonial-card .text p {
+  height: 308px;
+  color: #575757;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  padding: 40px 30px 0 40px;
+}
+
+.wrapper-one .testimonial-card img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  height: 110px;
+  width: 110px;
+  position: absolute;
+  left: 142px;
+  top: 255px;
+}
+
+.wrapper-one .testimonial-card .contact-footer {
+  background-color: #686de0;
+  color: #fff;
+  text-align: center;
+  padding-top: 60px;
+  width: 100%;
+  height: 155px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.wrapper-one .testimonial-card .contact-footer h2 {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  padding: 10px 0 8px;
+}
+
+.wrapper-one .testimonial-card .contact-footer p {
+  font-size: 1.1rem;
+  color: #a2a7e7;
+  font-weight: bold;
+}
+
+.wrapper-two {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 20px;
+  margin: 40px auto;
+}
+
+.wrapper-two .grid-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.wrapper-two .grid-item img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  display: block;
+}
+
+.wrapper-two .grid-item .btn {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  height: 250px;
+  width: 250px;
+  opacity: 0;
+  background-color: #252b3e;
+  border-radius: 10px;
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+}
+
+.wrapper-two .grid-item .btn button {
+  background-color: #c3cfe2;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.wrapper-two .grid-item .btn:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper-two {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    margin: 50px 40px;
+    row-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper-two {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    margin: 80px 50px;
+    row-gap: 40px;
+  }
+}
+
+.wrapper-three {
+  height: 250px;
+  width: auto;
+  position: absolute;
+  right: 0;
+}
+
+.wrapper-three .social-media {
+  width: 300px;
+  height: 100%;
+  list-style: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper-three .social-media li {
+  height: 50px;
+  width: 100%;
+}
+
+.wrapper-three .social-media li .fa-laptop-code,
+.wrapper-three .social-media li .fa-twitter,
+.wrapper-three .social-media li .fa-linkedin-in,
+.wrapper-three .social-media li .fa-facebook-f,
+.wrapper-three .social-media li .fa-github {
+  color: #fff;
+  width: 50px;
+}
+
+.wrapper-three .social-media li .fa-laptop-code {
+  padding: 16px 60px 10px 19px;
+}
+
+.wrapper-three .social-media li .fa-twitter {
+  padding: 18px 60px 10px 22px;
+}
+
+.wrapper-three .social-media li .fa-linkedin-in {
+  padding: 19px 60px 10px 23px;
+}
+
+.wrapper-three .social-media li .fa-facebook-f {
+  padding: 19px 60px 10px 25px;
+}
+
+.wrapper-three .social-media li .fa-github {
+  padding: 19px 60px 10px 21px;
+}
+
+.wrapper-three .social-media li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.wrapper-three .social-media li a:hover {
+  text-decoration: underline;
+}
+
+.wrapper-three .social-media .blog {
+  background-color: #e17b77;
+  top: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transform: translateX(235px);
+          transform: translateX(235px);
+  -webkit-transition: right 300ms ease-in-out;
+  transition: right 300ms ease-in-out;
+}
+
+.wrapper-three .social-media .blog:hover {
+  right: 200px;
+}
+
+.wrapper-three .social-media .twitter {
+  background-color: #00aced;
+  bottom: 150px;
+  position: absolute;
+  right: 0;
+  -webkit-transform: translateX(235px);
+          transform: translateX(235px);
+  -webkit-transition: right 300ms ease-in-out;
+  transition: right 300ms ease-in-out;
+}
+
+.wrapper-three .social-media .twitter:hover {
+  right: 200px;
+}
+
+.wrapper-three .social-media .linkedin {
+  background-color: #007bb6;
+  bottom: 100px;
+  position: absolute;
+  right: 0;
+  -webkit-transform: translateX(235px);
+          transform: translateX(235px);
+  -webkit-transition: right 300ms ease-in-out;
+  transition: right 300ms ease-in-out;
+}
+
+.wrapper-three .social-media .linkedin:hover {
+  right: 200px;
+}
+
+.wrapper-three .social-media .facebook {
+  background-color: #3b5998;
+  bottom: 50px;
+  position: absolute;
+  right: 0;
+  -webkit-transform: translateX(235px);
+          transform: translateX(235px);
+  -webkit-transition: right 300ms ease-in-out;
+  transition: right 300ms ease-in-out;
+}
+
+.wrapper-three .social-media .facebook:hover {
+  right: 200px;
+}
+
+.wrapper-three .social-media .github {
+  background-color: #333;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transform: translateX(235px);
+          transform: translateX(235px);
+  -webkit-transition: right 300ms ease-in-out;
+  transition: right 300ms ease-in-out;
+}
+
+.wrapper-three .social-media .github:hover {
+  right: 200px;
+}
+/*# sourceMappingURL=styles.css.map */

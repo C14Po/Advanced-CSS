@@ -1,0 +1,41 @@
+$backgroundColor: #c3cfe2;
+$white: #fff;
+$backgroundFooter: #686de0;
+$footerSiteText: #a2a7e7;
+$backgroundGrid: #252b3e;
+$borderRadiusOne: 15px;
+$borderRadiusTwo: 10px;
+
+@mixin flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin transformSocialMedia {
+	position: absolute;
+	right: 0;
+	transform: translateX(235px);
+	transition: right 300ms ease-in-out;
+
+	&:hover {
+		right: 200px;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $backgroundColor;
+	font-family: "Roboto", sans-serif;
+}
+
+@import "./wrapper1";
+
+@import "./wrapper2";
+
+@import "./wrapper3";
